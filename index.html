@@ -13,6 +13,16 @@
     html{
         scroll-behavior: smooth;
     }
+
+    @keyframes rotate-45 {
+        0% {transform: rotate(10deg);}
+        50% {transform: rotate(-10deg);}
+        100% {transform: rotate(10deg);}
+        
+    }
+    .rotate-animi {
+        animation: rotate-45 0.6s ease-in-out infinite;
+    }
 </style>
 <body class=" m-0 font-sans bg-gradient-to-br from-purple-400 via-purple-700 to-purple-900">
 <nav class=" fixed  mt-0 px-2 sm:px-6 lg:px-8 h-16 w-full z-90 bg-purple-500">
@@ -34,7 +44,7 @@
  
 <section id="home" class="pt-20 bg-gradient-to-br from-purple-400 row-span-1 via-purple-700 to-purple-900">
 <div class="container h-screen p-10 sm:pt-10 pt-0 rounded-xl hover:bg-opacity-5 mx-auto text-center ">
-    <h1 class="text-5xl font-bold text-white">Welcome to Nadooor's World!</h1>
+   <div class="rotate-animi "> <h1 class="text-5xl  font-bold text-white">Welcome to Nadooor's World!</h1></div>
     <p class="mt-4 text-lg text-white">Explore my projects, learn about me, and get in touch!</p>
     <p class=" relative top-8 sm:text-4xl text-3xl">A cyber-security lover, lovely programmer, Hardware crafter, more then happy to be your friend. 🤩🤩🤩</p>
     
